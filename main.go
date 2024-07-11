@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	c := calc{}
+	c := calc{opMap: opMap}
 	x := 10
 	y := 5
 	op := "+"

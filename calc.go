@@ -1,8 +1,9 @@
 package main
 
 type calc struct {
+	opMap map[string]operation
 }
 
 func (c calc) compute(x int, y int, op string) int {
-	return opMap[op](x, y)
+	return c.opMap[op](x, y)
 }
